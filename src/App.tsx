@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import KamdemNavbar from "./components/Navbars/KamdemNavbar";
+import KamdemFooter from "./components/Footers/KamdemFooter";
+import KamdemSectionTabs from "./components/Views/KamdemSectionTabs";
+import KamdemSectionLogin from "./components/Views/KamdemSectionLogin";
+import KamdemWorkSection from "./components/Views/KamdemWorkSection";
+import KamdemWorkSectionPartner from "./components/Views/KamdemSectionPartner";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <KamdemNavbar />
+      <KamdemSectionTabs />
+      <KamdemSectionLogin />
+      <KamdemWorkSectionPartner />
+      <KamdemWorkSection />
+      <KamdemFooter />
     </div>
   );
 }
